@@ -1,0 +1,103 @@
+body{
+}
+
+#mainWrap{
+    background-color: #c2c2c2;
+    padding-top: 10px;
+    width: 100%;
+    
+    
+}
+
+
+#headerWrap{
+    background-color: rgb(21, 129, 223);
+    width: 100%;
+    height: 300px;
+}
+
+
+#logoBannerWrap{
+    width: 100%;
+    height: 100px;
+    background-color: #5b5252;
+    
+    
+}
+
+
+#logoWrap{
+    background-color: #7fc792;
+    width: 6%;
+    height: 100%;
+    float: left;
+    
+    
+}
+
+#logoWrap img{
+    height:100%;
+    width: 100%;
+}
+
+
+#bannerWrap{
+    float:left;
+    width: 94%;
+    height: 100%;
+    background-color: #e6cccc;
+    font-size: 30px;
+
+}
+
+#bannerWrap h2{
+    margin: 0;
+    padding: 0;
+
+}
+
+#bannerWrap img{
+    margin-top: 0.6%;
+    padding-top: 0;
+    float: right;
+    margin-right: 5px;
+    height: 80%;
+    width: 80px;
+    border-radius: 450px;
+    
+}
+
+#navbarWrap{
+
+
+}
+
+
+#imageWrap{
+
+
+}
+
+
+#welcomeWrap{
+
+
+}
+
+
+#imgSlider{
+
+
+}
+
+
+#infoWrap{
+
+
+}
+
+
+#sentencesWrap{
+
+
+}
