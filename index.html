@@ -10,54 +10,142 @@
     <link rel="shortcut icon" type="image/png" href="images/titlelogo.png" />
 
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="javascript/index.js"></script>
+    <script src="javascript/slider.js"></script>
 
 </head>
+
+<style>
+    body{
+        background: url(pattern.jpg);
+
+    }
+</style>
 
 <body>
     <div id="mainWrap">
         <div id="headerWrap">
-            <div id="logoBannerWrap">
-                <div id="logoWrap">
-                    <a href="#">
+            <div id="logoWrap">
+                <img src="images/telephone.png">
+                </a>
+            </div>
+            <div id="bannerWrap">
+
+                <div id="sloganNav">
+                    <center style=" margin: 0; padding: 1px;">
+                        <a href="https://api.whatsapp.com/send?phone=9813854724"
+                            style="text-decoration: none ; margin: 0; padding: 0; float: left;">Call us</a> Be the
+                        reason for someone's heartbeat... <br>
+                    </center>
+
+                    <div id="navbarWrap">
                         <img src="images/logo.webp" alt="logo">
-                    </a>
-                </div>
-                <div id="bannerWrap">
-                    
-                  Be the reason for someone's heartbeat...
 
-                    
-                    <a href = "https://www.instagram.com/tupeshghimire/" class="sendRight"><img src="images/insta.png" alt=""></a>
-                    <a href = "https://www.facebook.com/tupesh.ghimire.1" class="sendRight "><img src="images/fb.jpeg" alt=""></a>
-                    <a href = "mailto: tupeshghimire@gmail.com" class="sendRight"><img src="images/email.jpeg" alt="">   </a>
-                      <a href="https://api.whatsapp.com/send?phone=9813854724"><img src= "images/telephone.png"></a>
-                   
-                       
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Blog</button>
+                                    <div class="dropdown-content">
+                                        <a href="donationProcess.html">Donation Process</a>
+                                        <a href="donationCentres.html">Donation Center</a>
+                                        <a href="events.html">Upcoming Events</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="emergency.html">Emergency</a></li>
+                            <li><a href="form.html">Form</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div id="navbarWrap">
 
+                <div id="socialMedia">
+                    <a href="https://www.instagram.com/tupeshghimire/" class="sendRight"><img src="images/insta.png"
+                            alt=""></a>
+                    <a href="https://www.facebook.com/tupesh.ghimire.1" class="sendRight "><img src="images/fb.jpeg"
+                            alt=""></a>
+                    <a href="mailto: tupeshghimire@gmail.com" class="sendRight"><img src="images/email.jpeg" alt=""></a>
+                </div>
             </div>
         </div>
 
-        <div id="imageWrap">
-            <div id="welcomeWrap">
+        <div id="content">
+            <div id="imageWrap">
+                <div class="slideshow-container">
 
+                <!-- Full-width images with number and Photo text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="images/blooddonation/1.jpeg" style="width:120%; height: 120%">
+                    <div class="text"> Our caring nurses await to collect your blood </div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/blooddonation/3.jpeg" style="width:120%; height: 120%">
+                    <div class="text"> Phone-friendly zone - talk, text, and donate! </div>
+                </div>
+                
+                                <div class="mySlides fade">
+                                    <div class="numbertext">2 / 5</div>
+                                    <img src="images/blooddonation/2.jpeg" style="width:120%; height: 120%">
+                                    <div class="text"> Snap, donate, post - become a blood donor influencer </div>
+                                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/blooddonation/4.jpeg" style="width:120%; height: 120%">
+                    <div class="text"> Donate blood, get closer to your crush - who knows, they might be right beside you!</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/blooddonation/5.jpeg" style="width:120%; height: 120%">
+                    <div class="text"> You're not alone...in a crowd of vampires </div>
+                </div>
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-
-            <div id="imgSlider">
-
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center; margin-top: -5%;margin-left: 14%;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
+            <h2 style="text-align: center; font-size: 50px;margin-left: 14%;">Gallery</h2>
         </div>
+    </div>
 
         <div id="infoWrap">
-            <h1 class="container"> Why donate blood?</h1>
-            <div id="sentencesWrap"></div>
+            <div id="sentencesWrap">
+                <h1>Jumpstart your hero journey today!</h1>
+                <p class="appearing-text">Our blood bank website's motto? Picture this: Saving Lives, One Drop at a Time...or should we say, one pint-sized superhero at a time? With a commitment to ensuring a blood supply that's fresher than your morning orange juice, our mission is to unite donors and recipients in a lifesaving journey. Through our platform, we're like the ultimate matchmaker, connecting folks in need with folks who bleed (the good kind!). Together, we're the squad bringing hope, compassion, and maybe a few Band-Aids, to save the day – one drop, one laugh, and one bad vampire pun at a time!</p>
+
+
+                <p class="second-text">
+                    Imagine a world where kindness rules, where every smile is a high-five, and every act of goodness is like throwing papers into the sky! It's like being a superhero with a super soft cape made of hugs, armed with a trusty sidekick called Positivity. We're talking about spreading joy like it's the coolest dance move, being the human version of a cozy blanket on a chilly day, and making giggles pop up like popcorn in a movie theater. Let's be the kings and queens of kindness, the champions of cheer, and the leaders of laughter! So, grab your cape, get ready to spread some serious smiles, and let's make the world a happier place, one belly laugh at a time!</p>
+
+                
+            </div>
         </div>
+    </div>
 
 
     </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Blood Bank. All rights reserved.<br>
+            <a href="http://tupesh.com.np" style="color: #fff;">@JustAnotherHuman!!</a>
+        </p>
+    </footer>
 </body>
 
 </html>

@@ -1,103 +1,232 @@
-body{
+body {
+    font-family: 'Times New Roman';
+    border-radius: 40px;
 }
 
-#mainWrap{
-    background-color: #c2c2c2;
+
+#mainWrap {
     padding-top: 10px;
     width: 100%;
-    
-    
+    height: 100%;
+    border-radius: 40px;
+
+
 }
 
 
-#headerWrap{
-    background-color: rgb(21, 129, 223);
-    width: 100%;
-    height: 300px;
-}
-
-
-#logoBannerWrap{
+#headerWrap {
     width: 100%;
     height: 100px;
-    background-color: #5b5252;
-    
-    
 }
 
 
-#logoWrap{
-    background-color: #7fc792;
+#logoWrap {
     width: 6%;
     height: 100%;
     float: left;
-    
-    
+
+
 }
 
-#logoWrap img{
-    height:100%;
-    width: 100%;
-}
-
-
-#bannerWrap{
-    float:left;
-    width: 94%;
+#logoWrap img {
     height: 100%;
-    background-color: #e6cccc;
-    font-size: 30px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 25px 0 0 25px;
 
 }
 
-#bannerWrap h2{
+
+#bannerWrap {
+    float: left;
+    width: 92%;
+    height: 100%;
+    margin-left: 20px;
+    background-color: #f25353;
+    font-size: 30px;
+    border-radius: 0 25px 25px 0;
+
+}
+
+#sloganLogo {
+    height: 100%;
+    width: 50%;
+}
+
+#sloganNav {
+    float: left;
+    width: 83.5%;
+}
+
+#navbarWrap {
+    height: 62px;
+    background-color: rgb(149, 90, 65);
+    text-align: center;
+    width: 100%;
+    padding-top: auto;
+    border-radius: 0  25px 25px 0;
+}
+
+#navbarWrap img {
+    float: left;
+    margin-left: 10px;
+    height: 100%;
+}
+
+#navbarWrap ul {
+    float: right;
+    text-decoration: none;
+    margin: 0;
+}
+
+#navbarWrap ul li {
+    height: 100%;
+    list-style: none;
+    float: left;
+    padding-right: 25px;
+}
+
+#navbarWrap ul li a {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 150%;
+    color: #ffffff;
+
+}
+#navbarWrap ul li a:hover{
+    background-color: red;
+}
+
+
+.dropbtn {
+    text-decoration: none;
+    background-color: rgb(235, 87, 19);
+    font-size: 150%;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 1; /* Set a higher z-index value */
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(178, 219, 30);
+    min-width: 10px;
+    font-size: 20px;
+    padding: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ab9393
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+#socialMedia {
+    margin-left: 0px;
+    margin-left: 20px;
+    padding-right: 0;
+    width: 15%;
+    float: left;
+
+}
+
+
+#socialMedia img {
+    float: left;
+    margin-top: 8%;
+    padding-top: 0;
+    margin-right: 5px;
+    height: 60%;
+    width: 60px;
+    border-radius: 300px;
+    place-items: center;
+
+}
+
+
+
+#imageWrap {
+    width: 50%;
+    height: 500px;
+    float: right;
+    margin-top: 2.5%;
+    z-index: 0; /* Ensure image is behind other elements */
+
+}
+
+
+
+#infoWrap {
+    float: left;
+    margin-top: 2.5%;
+    padding: 0 1% 0 7%;
+    height: 100%;
+    width: 45%;
+}
+
+#infoWrap h1 {
+    font-size: 50px;
     margin: 0;
     padding: 0;
-
 }
 
-#bannerWrap img{
-    margin-top: 0.6%;
-    padding-top: 0;
-    float: right;
-    margin-right: 5px;
-    height: 80%;
-    width: 80px;
-    border-radius: 450px;
-    
+
+#infoWrap p {
+    font-size: 20px;
 }
 
-#navbarWrap{
 
+
+#sentencesWrap {
+    float: left;
+    padding:5%;
+    background-color: rgba(194, 194, 194, 0.5);
 
 }
 
 
-#imageWrap{
-
-
+/* Footer styles */
+footer {
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 99.3%;
 }
 
-
-#welcomeWrap{
-
-
-}
-
-
-#imgSlider{
-
-
-}
-
-
-#infoWrap{
-
-
-}
-
-
-#sentencesWrap{
-
-
-}
