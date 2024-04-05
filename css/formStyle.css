@@ -1,8 +1,12 @@
+table{
+    text-decoration: underline;
+}
 /* FORM CSS */
     /* Add padding to table cells */
     td {
         padding: 0 0 10px 0;
         /* Adjust the value to change the gap between cells */
+        font-size: 1.3em;
     }
 
     .switch {
