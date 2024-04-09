@@ -245,8 +245,30 @@ footer {
 .container
 {
     width: 50%;
-    margin: 0 20%;
+    margin: 0 20% 10% 20%;
     padding: 1%;
     font-size: 25px;
     border: red solid;
 }
+
+.title{
+    font-size: 3em;
+}
+
+.map{
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+[data-text] {
+    font-size: 25px;
+    margin-left: 15%;
+    float: left;
+}
+
+  [data-text]::after {
+    content: attr(data-text);
+  }
