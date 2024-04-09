@@ -230,3 +230,23 @@ footer {
     width: 99.3%;
 }
 
+/* for donation process */
+
+.processWrap
+{
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 1%;
+    /* font-size: 2em; */
+    border:rgba(194, 194, 194, 0.5) solid;
+    border-radius: 25px;
+}
+
+.container
+{
+    width: 50%;
+    margin: 0 20%;
+    padding: 1%;
+    font-size: 25px;
+    border: red solid;
+}
