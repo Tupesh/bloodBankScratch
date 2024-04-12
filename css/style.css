@@ -63,7 +63,7 @@ body {
     height: 62px;
     background-color: rgb(149, 90, 65);
     text-align: center;
-    width: 100%;
+    width: 90%;
     padding-top: auto;
     border-radius: 0  25px 25px 0;
 }
@@ -156,8 +156,7 @@ body {
 
 
 #socialMedia {
-    margin-left: 0px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding-right: 0;
     width: 15%;
     float: left;
@@ -172,8 +171,8 @@ body {
     margin-right: 5px;
     height: 60%;
     width: 60px;
-    border-radius: 300px;
-    place-items: center;
+    border-radius: 50%;
+
 
 }
 

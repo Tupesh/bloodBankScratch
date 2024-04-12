@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formStyle.css">
     <script src="javascript/index.js"></script>
+    <script src="javascript/formValidation.js"></script>
 
     <style>
         body {
@@ -72,7 +73,7 @@
 
             <div style="float:left; margin-top: 5%; margin-left: 20%;" class="requestBloodForm" id="requestForm">
                 <h1 style="margin-bottom: 30px;">Request Blood:</h1>
-                <form method="" action="/success.html">
+                <form method="" action="/success.html" onsubmit="return validateRequestForm()">
 
                     <table>
                         <tr>
@@ -176,7 +177,7 @@
                 class="donateBloodForm" id="donateForm">
                 <h1 style="margin-bottom: 30px;">Donate Blood:</h1>
                 <table>
-                    <form method="" action="/success.html">
+                    <form method="" action="/success.html" onsubmit="return validateDonorForm()">
                         <tr>
                             <td>
                                 <label for="donarName">Donor Name:</label>
@@ -214,7 +215,7 @@
                                     <option value="AB">AB</option>
 
                                 </select>
-                                <select id="donarBloodGroup" name="donarBloodGroup" style="width: 20%;">
+                                <select id="donarBloodRh" name="donarBloodRh" style="width: 20%;">
                                     <option value="" disabled selected>- - -</option>
                                     <option value="positive">+ve</option>
                                     <option value="negative">-ve</option>
@@ -223,12 +224,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="donarBloodGroup">Last Donation Date:</label>
+                                <label for="donationDate">Last Donation Date:</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="date" name="" id="" style="height: 120%;">
+                                <input type="date" name="donationDate" id="donationDate" style="height: 120%;">
                             </td>
                         </tr>
 
@@ -253,7 +254,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="file" name="idCard" id="">
+                                <input type="file" name="idCard" id="idCard">
                             </td>
                         </tr>
 
