@@ -41,13 +41,15 @@ function validateDonorForm() {
     var donationDate = document.getElementById("donationDate").value;
     var age = document.getElementById("age").value;
     var idCard = document.getElementById("idCard").value;
+    var genderRadios = document.getElementsByName("genderR");
+
 
     if (donarName == "") {
         alert("Donor's name should be entered.");
         return false;
     }
 
-    if (age == -"") {
+    if (age == "") {
         alert("Enter donar's age.");
         return false;
     }
@@ -69,6 +71,7 @@ function validateDonorForm() {
 
 
 
+    var genderSelected = false;
     for (var i = 0; i < genderRadios.length; i++) {
         if (genderRadios[i].checked) {
             genderSelected = true;
@@ -80,6 +83,7 @@ function validateDonorForm() {
         alert("Please select donor's gender.");
         return false;
     }
+
 
     if(idCard.isDefaultNamespace.length===0){
         alert("Please input identity image file.");

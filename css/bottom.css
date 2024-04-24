@@ -1,0 +1,36 @@
+#feedback {
+    width: 85%;
+    height: 700px;
+    background-color: aquamarine;
+    margin: 800px auto;
+    text-align: center;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+#feed1,
+#feed2,
+#feed3 {
+    width: 30%;
+    height: 70%;
+    background-color: red;
+    float: left;
+    margin: 20px;
+}
+
+#feedImg img {
+    width: 30%;
+    height: auto;
+    float: left;
+    padding: 1%;
+}
+
+.feedIntro {
+    float: left;
+    padding: 3%;
+}
+
+
+.feedIntro table tr td {
+    text-align: left;
+}
